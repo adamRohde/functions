@@ -25,11 +25,11 @@ let counter = (() => {
 
   setInterval(() => { 
     if (counter.value() >= 10){
-          console.log('reset');  
+         // console.log('reset');  
           counter.reset();
     }     
     counter.increment();
-    console.log(counter.value());
+   // console.log(counter.value());
   }, 1000)
 
 
@@ -58,11 +58,11 @@ let counter = (() => {
 
   setInterval(() => { 
     if (counter1.value() >= 20){
-          console.log('reset');  
+         // console.log('reset');  
           counter1.reset();
     }     
     counter1.increment();
-    console.log(counter1.value());  
+   //console.log(counter1.value());  
   }, 1000)
   
 //----------------------------------------------Traditional function-----------------------------------------------
@@ -86,14 +86,28 @@ let counter = (() => {
     }
   }
 
-  var counter2 = myTraditionalCounter();
+  let counter2 = myTraditionalCounter();
 
   setInterval(() => { 
     if (counter2.value() >= 30){
-          console.log('reset');  
+         // console.log('reset');  
           counter2.reset();
     }     
     counter2.increment();
-    console.log(counter2.value());  
+   // console.log(counter2.value());  
   }, 1000)
   
+
+window.onload = (e) => {
+
+    console.log(e);
+
+
+
+};
+
+ function dummyFunction(){
+
+    return 7;
+
+}
